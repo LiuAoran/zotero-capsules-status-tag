@@ -29,14 +29,8 @@
 截图来自独立临时配置和测试文献。明暗与种子色只影响插件自己的胶囊、菜单和设置页面。
 
 ![状态与设置](docs/screenshots/settings-dark.png)
-
-<details>
-<summary>文献列表与浅色设置</summary>
-
 ![文献列表](docs/screenshots/library-dark.png)
 ![浅色设置](docs/screenshots/settings-light.png)
-
-</details>
 
 ## 安装
 
