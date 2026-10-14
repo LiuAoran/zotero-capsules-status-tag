@@ -1,0 +1,21 @@
+{
+  "version": "1.0.0",
+  "checks": [
+    {
+      "name": "settings displays five statuses dark",
+      "pass": true
+    },
+    {
+      "name": "no unrelated theme label in settings dark",
+      "pass": true
+    },
+    {
+      "name": "settings displays five statuses light",
+      "pass": true
+    },
+    {
+      "name": "no unrelated theme label in settings light",
+      "pass": true
+    }
+  ]
+}

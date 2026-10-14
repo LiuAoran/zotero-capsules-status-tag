@@ -1,0 +1,208 @@
+{
+  "version": "10.0.6",
+  "checks": [
+    {
+      "name": "same source repaint click opens false",
+      "pass": true
+    },
+    {
+      "name": "single mouse gesture saves once false",
+      "pass": true
+    },
+    {
+      "name": "same source repaint click opens true",
+      "pass": true
+    },
+    {
+      "name": "single mouse gesture saves once true",
+      "pass": true
+    },
+    {
+      "name": "same source repaint click opens false",
+      "pass": true
+    },
+    {
+      "name": "single mouse gesture saves once false",
+      "pass": true
+    },
+    {
+      "name": "same source repaint click opens true",
+      "pass": true
+    },
+    {
+      "name": "single mouse gesture saves once true",
+      "pass": true
+    },
+    {
+      "name": "same source repaint click opens false",
+      "pass": true
+    },
+    {
+      "name": "single mouse gesture saves once false",
+      "pass": true
+    },
+    {
+      "name": "same source repaint click opens true",
+      "pass": true
+    },
+    {
+      "name": "single mouse gesture saves once true",
+      "pass": true
+    },
+    {
+      "name": "same source repaint click opens false",
+      "pass": true
+    },
+    {
+      "name": "single mouse gesture saves once false",
+      "pass": true
+    },
+    {
+      "name": "same source repaint click opens true",
+      "pass": true
+    },
+    {
+      "name": "single mouse gesture saves once true",
+      "pass": true
+    },
+    {
+      "name": "same source repaint click opens false",
+      "pass": true
+    },
+    {
+      "name": "single mouse gesture saves once false",
+      "pass": true
+    },
+    {
+      "name": "same source repaint click opens true",
+      "pass": true
+    },
+    {
+      "name": "single mouse gesture saves once true",
+      "pass": true
+    },
+    {
+      "name": "same source repaint click opens false",
+      "pass": true
+    },
+    {
+      "name": "single mouse gesture saves once false",
+      "pass": true
+    },
+    {
+      "name": "same source repaint click opens true",
+      "pass": true
+    },
+    {
+      "name": "single mouse gesture saves once true",
+      "pass": true
+    },
+    {
+      "name": "release on different item cancels",
+      "pass": true
+    },
+    {
+      "name": "release outside window cancels",
+      "pass": true
+    }
+  ],
+  "cases": [
+    {
+      "repaint": false,
+      "oldNodeConnected": false,
+      "selected": [
+        2060
+      ],
+      "menuOpen": true
+    },
+    {
+      "repaint": true,
+      "oldNodeConnected": false,
+      "selected": [
+        2060
+      ],
+      "menuOpen": true
+    },
+    {
+      "repaint": false,
+      "oldNodeConnected": true,
+      "selected": [
+        2060
+      ],
+      "menuOpen": true
+    },
+    {
+      "repaint": true,
+      "oldNodeConnected": false,
+      "selected": [
+        2060
+      ],
+      "menuOpen": true
+    },
+    {
+      "repaint": false,
+      "oldNodeConnected": true,
+      "selected": [
+        2060
+      ],
+      "menuOpen": true
+    },
+    {
+      "repaint": true,
+      "oldNodeConnected": false,
+      "selected": [
+        2060
+      ],
+      "menuOpen": true
+    },
+    {
+      "repaint": false,
+      "oldNodeConnected": true,
+      "selected": [
+        2060
+      ],
+      "menuOpen": true
+    },
+    {
+      "repaint": true,
+      "oldNodeConnected": false,
+      "selected": [
+        2060
+      ],
+      "menuOpen": true
+    },
+    {
+      "repaint": false,
+      "oldNodeConnected": true,
+      "selected": [
+        2060
+      ],
+      "menuOpen": true
+    },
+    {
+      "repaint": true,
+      "oldNodeConnected": false,
+      "selected": [
+        2060
+      ],
+      "menuOpen": true
+    },
+    {
+      "repaint": false,
+      "oldNodeConnected": true,
+      "selected": [
+        2060
+      ],
+      "menuOpen": true
+    },
+    {
+      "repaint": true,
+      "oldNodeConnected": false,
+      "selected": [
+        2060
+      ],
+      "menuOpen": true
+    }
+  ],
+  "pluginVersion": "1.0.14"
+}

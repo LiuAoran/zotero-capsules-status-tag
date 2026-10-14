@@ -1,0 +1,88 @@
+{
+  "version": "10.0.6",
+  "checks": [
+    {
+      "name": "real confirmation dialog appeared false false",
+      "pass": true
+    },
+    {
+      "name": "cancel preserves every setting false",
+      "pass": true
+    },
+    {
+      "name": "real confirmation dialog appeared false true",
+      "pass": true
+    },
+    {
+      "name": "confirm resets theme seed tint false",
+      "pass": true
+    },
+    {
+      "name": "confirm resets active state configuration false",
+      "pass": true
+    },
+    {
+      "name": "custom identity remains recognized without rewriting item false",
+      "pass": true
+    },
+    {
+      "name": "settings controls and preview refresh false",
+      "pass": true
+    },
+    {
+      "name": "real confirmation dialog appeared true false",
+      "pass": true
+    },
+    {
+      "name": "cancel preserves every setting true",
+      "pass": true
+    },
+    {
+      "name": "real confirmation dialog appeared true true",
+      "pass": true
+    },
+    {
+      "name": "confirm resets theme seed tint true",
+      "pass": true
+    },
+    {
+      "name": "confirm resets active state configuration true",
+      "pass": true
+    },
+    {
+      "name": "custom identity remains recognized without rewriting item true",
+      "pass": true
+    },
+    {
+      "name": "settings controls and preview refresh true",
+      "pass": true
+    }
+  ],
+  "dialogs": [
+    {
+      "confirm": false,
+      "themeFixture": false,
+      "title": "恢复默认设置",
+      "text": "\n      \n        \n          \n        \n        \n          恢复默认设置\n          恢复默认外观与内置状态，移除自定义状态。\n文献已有标签保留。是否继续？\n        \n      \n      \n        \n        \n      \n      \n        \n        \n      \n      \n        \n        \n        \n      \n    "
+    },
+    {
+      "confirm": true,
+      "themeFixture": false,
+      "title": "恢复默认设置",
+      "text": "\n      \n        \n          \n        \n        \n          恢复默认设置\n          恢复默认外观与内置状态，移除自定义状态。\n文献已有标签保留。是否继续？\n        \n      \n      \n        \n        \n      \n      \n        \n        \n      \n      \n        \n        \n        \n      \n    "
+    },
+    {
+      "confirm": false,
+      "themeFixture": true,
+      "title": "恢复默认设置",
+      "text": "\n      \n        \n          \n        \n        \n          恢复默认设置\n          恢复默认外观与内置状态，移除自定义状态。\n文献已有标签保留。是否继续？\n        \n      \n      \n        \n        \n      \n      \n        \n        \n      \n      \n        \n        \n        \n      \n    "
+    },
+    {
+      "confirm": true,
+      "themeFixture": true,
+      "title": "恢复默认设置",
+      "text": "\n      \n        \n          \n        \n        \n          恢复默认设置\n          恢复默认外观与内置状态，移除自定义状态。\n文献已有标签保留。是否继续？\n        \n      \n      \n        \n        \n      \n      \n        \n        \n      \n      \n        \n        \n        \n      \n    "
+    }
+  ],
+  "pluginVersion": "1.0.14"
+}

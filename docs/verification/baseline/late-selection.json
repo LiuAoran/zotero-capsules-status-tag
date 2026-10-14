@@ -1,0 +1,179 @@
+{
+  "checks": [
+    {
+      "name": "B selected when its menu opens menu",
+      "pass": true
+    },
+    {
+      "name": "only clicked B changes menu",
+      "pass": true
+    },
+    {
+      "name": "selection follows latest user intent menu",
+      "pass": true
+    },
+    {
+      "name": "guard expires after settling menu",
+      "pass": true
+    },
+    {
+      "name": "B selected when its menu opens after-save",
+      "pass": true
+    },
+    {
+      "name": "only clicked B changes after-save",
+      "pass": true
+    },
+    {
+      "name": "selection follows latest user intent after-save",
+      "pass": true
+    },
+    {
+      "name": "guard expires after settling after-save",
+      "pass": true
+    },
+    {
+      "name": "B selected when its menu opens slow-save",
+      "pass": true
+    },
+    {
+      "name": "only clicked B changes slow-save",
+      "pass": true
+    },
+    {
+      "name": "selection follows latest user intent slow-save",
+      "pass": true
+    },
+    {
+      "name": "guard expires after settling slow-save",
+      "pass": true
+    },
+    {
+      "name": "B selected when its menu opens new-user-input",
+      "pass": true
+    },
+    {
+      "name": "only clicked B changes new-user-input",
+      "pass": true
+    },
+    {
+      "name": "selection follows latest user intent new-user-input",
+      "pass": true
+    },
+    {
+      "name": "guard expires after settling new-user-input",
+      "pass": true
+    },
+    {
+      "name": "B selected when its menu opens keyboard-input",
+      "pass": true
+    },
+    {
+      "name": "only clicked B changes keyboard-input",
+      "pass": true
+    },
+    {
+      "name": "selection follows latest user intent keyboard-input",
+      "pass": true
+    },
+    {
+      "name": "guard expires after settling keyboard-input",
+      "pass": true
+    },
+    {
+      "name": "new menu survives older save completion",
+      "pass": true
+    },
+    {
+      "name": "old save cannot expire newer menu selection guard",
+      "pass": true
+    },
+    {
+      "name": "detached menu cannot save or close new menu",
+      "pass": true
+    }
+  ],
+  "steps": [
+    {
+      "phase": "menu",
+      "selected": [
+        2056
+      ],
+      "a": [
+        {
+          "tag": "/reading-status/to-read"
+        }
+      ],
+      "b": [
+        {
+          "tag": "/reading-status/reading"
+        }
+      ]
+    },
+    {
+      "phase": "after-save",
+      "selected": [
+        2056
+      ],
+      "a": [
+        {
+          "tag": "/reading-status/to-read"
+        }
+      ],
+      "b": [
+        {
+          "tag": "/reading-status/reading"
+        }
+      ]
+    },
+    {
+      "phase": "slow-save",
+      "selected": [
+        2056
+      ],
+      "a": [
+        {
+          "tag": "/reading-status/to-read"
+        }
+      ],
+      "b": [
+        {
+          "tag": "/reading-status/reading"
+        }
+      ]
+    },
+    {
+      "phase": "new-user-input",
+      "selected": [
+        2055
+      ],
+      "a": [
+        {
+          "tag": "/reading-status/to-read"
+        }
+      ],
+      "b": [
+        {
+          "tag": "/reading-status/reading"
+        }
+      ]
+    },
+    {
+      "phase": "keyboard-input",
+      "selected": [
+        2055
+      ],
+      "a": [
+        {
+          "tag": "/reading-status/to-read"
+        }
+      ],
+      "b": [
+        {
+          "tag": "/reading-status/reading"
+        }
+      ]
+    }
+  ],
+  "pluginVersion": "1.0.14"
+}

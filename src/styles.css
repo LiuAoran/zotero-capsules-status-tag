@@ -1,0 +1,396 @@
+.rs-capsule-cell {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: flex-start !important;
+  text-align: left !important;
+  overflow: hidden !important;
+  min-width: 0;
+}
+.rs-capsule-cell > .rs-capsule,
+.rs-menu button,
+.rs-settings button {
+  appearance: none;
+  box-sizing: border-box;
+  font-family: Roboto, system-ui, sans-serif;
+  text-transform: none;
+  margin: 0;
+  cursor: pointer;
+  position: relative;
+  isolation: isolate;
+}
+.rs-capsule-cell > .rs-capsule {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  height: 22px;
+  width: 96px;
+  min-height: 0;
+  min-width: 0;
+  max-width: 100%;
+  padding: 0 8px;
+  border: 0;
+  border-radius: 8px;
+  font-size: 11px;
+  font-weight: 500;
+  line-height: 16px;
+  letter-spacing: 0.1px;
+  background: var(--rs-bg);
+  color: var(--rs-fg);
+  flex: 0 1 96px;
+}
+.rs-capsule .rs-label {
+  flex: 1;
+  text-align: left;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.rs-capsule .rs-arrow {
+  flex: none;
+  width: 12px;
+  height: 12px;
+  fill: currentColor;
+}
+.rs-capsule::before,
+.rs-menu button::before,
+.rs-settings button::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  background: currentColor;
+  opacity: 0;
+  pointer-events: none;
+  z-index: -1;
+}
+.rs-capsule:hover::before,
+.rs-menu button:hover::before {
+  opacity: 0.08;
+}
+.rs-capsule:active::before,
+.rs-menu button:active::before {
+  opacity: 0.12;
+}
+.rs-capsule:focus-visible,
+.rs-menu button:focus-visible,
+.rs-settings :is(button, select, input):focus-visible {
+  outline: 2px solid var(--rs-primary);
+  outline-offset: -2px;
+}
+.rs-capsule:focus-visible::before,
+.rs-menu button:focus-visible::before {
+  opacity: 0.12;
+}
+.rs-capsule[aria-disabled='true'] {
+  cursor: default;
+  background: color-mix(in srgb, var(--rs-onSurface) 12%, transparent);
+  color: color-mix(in srgb, var(--rs-onSurface) 38%, transparent);
+}
+.rs-capsule[aria-disabled='true']::before {
+  opacity: 0;
+}
+.rs-menu {
+  position: fixed;
+  z-index: 2147483647;
+  box-sizing: border-box;
+  width: 176px;
+  max-width: calc(100vw - 16px);
+  padding: 8px 0;
+  border: 0;
+  border-radius: 4px;
+  background: color-mix(in srgb, var(--rs-primary) 8%, var(--rs-surface));
+  color: var(--rs-onSurface);
+  box-shadow:
+    0 2px 6px #0003,
+    0 6px 16px #0002;
+  font:
+    14px/20px Roboto,
+    system-ui,
+    sans-serif;
+}
+.rs-menu button {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  width: 100%;
+  min-height: 40px;
+  padding: 0 12px;
+  border: 0;
+  border-radius: 0;
+  background: transparent;
+  color: var(--rs-onSurface);
+  font-size: 14px;
+  text-align: left;
+}
+.rs-menu button[aria-checked='true'] {
+  color: var(--rs-onSecondaryContainer);
+  background: var(--rs-secondaryContainer);
+}
+.rs-menu .rs-check {
+  width: 20px;
+  flex: none;
+}
+.rs-error {
+  position: fixed;
+  bottom: 16px;
+  left: 16px;
+  z-index: 2147483647;
+  border-radius: 4px;
+  padding: 10px 16px;
+  background: var(--rs-inverseSurface);
+  color: var(--rs-inverseOnSurface);
+  font:
+    14px/20px system-ui,
+    sans-serif;
+}
+.rs-settings {
+  padding: 20px;
+  border-radius: 12px;
+  color: var(--rs-onSurface);
+  background: var(--rs-surface);
+  font:
+    14px/20px system-ui,
+    sans-serif;
+}
+.rs-settings h2 {
+  font-size: 22px;
+  line-height: 28px;
+  font-weight: 400;
+  margin: 0 0 20px;
+}
+.rs-settings label {
+  display: block;
+  margin: 16px 0;
+}
+.rs-settings select,
+.rs-settings input {
+  margin-left: 12px;
+  padding: 8px;
+  border: 1px solid var(--rs-outline);
+  border-radius: 4px;
+  color: var(--rs-onSurface);
+  background: var(--rs-surface);
+}
+.rs-settings .rs-preview {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+  margin-top: 24px;
+}
+
+.rs-menu button:disabled {
+  opacity: 0.38;
+  cursor: default;
+}
+.rs-menu button:disabled::before {
+  opacity: 0;
+}
+
+.rs-settings .rs-preview .rs-capsule {
+  cursor: default;
+  pointer-events: none;
+}
+
+.rs-settings .rs-status-row {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  margin: 8px 0;
+}
+.rs-settings .rs-status-row input[type='text'] {
+  flex: 1;
+  min-width: 80px;
+  margin: 0;
+}
+.rs-settings .rs-status-row input[type='color'] {
+  width: 44px;
+  height: 34px;
+  padding: 2px;
+  margin: 0;
+}
+.rs-settings button {
+  border: 1px solid var(--rs-outline);
+  border-radius: 20px;
+  padding: 6px 12px;
+  background: var(--rs-secondaryContainer);
+  color: var(--rs-onSecondaryContainer);
+}
+.rs-settings button:disabled {
+  opacity: 0.38;
+  cursor: default;
+}
+.rs-settings .rs-config-error {
+  color: var(--rs-error);
+}
+
+.rs-settings button.rs-icon-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex: 0 0 34px;
+  width: 34px;
+  height: 34px;
+  min-width: 34px;
+  min-height: 34px;
+  padding: 0;
+  border-radius: 50%;
+}
+.rs-settings .rs-icon-button svg {
+  width: 20px;
+  height: 20px;
+  fill: currentColor;
+  pointer-events: none;
+}
+.rs-settings .rs-add-status {
+  margin-top: 16px;
+}
+.rs-settings button:hover::before {
+  opacity: 0.08;
+}
+.rs-settings button:active::before {
+  opacity: 0.12;
+}
+.rs-settings button:disabled::before {
+  opacity: 0;
+}
+
+.rs-settings .rs-delete-spacer {
+  flex: 0 0 34px;
+  width: 34px;
+}
+
+.rs-settings input[type='checkbox'] {
+  appearance: none !important;
+  position: relative;
+  display: inline-block;
+  vertical-align: -3px;
+  width: 16px;
+  height: 16px;
+  margin: 0 8px 0 0;
+  padding: 0;
+  border: 2px solid var(--rs-outline);
+  border-radius: 2px;
+  background: var(--rs-surface);
+  cursor: pointer;
+}
+.rs-settings input[type='checkbox']:checked {
+  background: var(--rs-primary);
+  border-color: var(--rs-primary);
+}
+.rs-settings input[type='checkbox']:checked::after {
+  content: '';
+  position: absolute;
+  left: 4px;
+  top: 0;
+  width: 4px;
+  height: 8px;
+  border: solid var(--rs-onPrimary);
+  border-width: 0 2px 2px 0;
+  transform: rotate(45deg);
+}
+
+.rs-settings .rs-settings-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  margin-bottom: 20px;
+}
+.rs-settings .rs-settings-header h2 {
+  margin: 0;
+}
+.rs-settings .rs-reset {
+  white-space: nowrap;
+}
+
+.rs-settings .rs-settings-header h2 {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.rs-settings .rs-settings-header h2 img {
+  flex: none;
+}
+
+.rs-settings .rs-theme-row {
+  display: grid;
+  gap: 10px;
+  margin: 20px 0;
+}
+.rs-settings .rs-theme-options {
+  display: flex;
+  width: 100%;
+  border: 1px solid var(--rs-outline);
+  border-radius: 20px;
+  overflow: hidden;
+}
+.rs-settings .rs-theme-options button {
+  flex: 1;
+  min-width: 0;
+  min-height: 40px;
+  padding: 8px 12px;
+  border: 0;
+  border-right: 1px solid var(--rs-outline);
+  border-radius: 0;
+  background: transparent;
+  color: var(--rs-onSurface);
+  text-align: center;
+}
+.rs-settings .rs-theme-options button:last-child {
+  border-right: 0;
+}
+.rs-settings .rs-theme-options button[aria-checked='true'] {
+  background: var(--rs-secondaryContainer);
+  color: var(--rs-onSecondaryContainer);
+  font-weight: 600;
+}
+.rs-settings .rs-seed-row {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 12px 24px;
+  margin: 20px 0;
+}
+.rs-settings .rs-seed-row label {
+  display: flex;
+  align-items: center;
+  margin: 0;
+  gap: 10px;
+}
+.rs-settings .rs-seed-row input {
+  margin: 0;
+}
+.rs-settings .rs-seed {
+  width: 52px;
+  height: 34px;
+  padding: 2px;
+}
+.rs-settings .rs-tint-label {
+  cursor: pointer;
+}
+.rs-settings .rs-support {
+  margin: 12px 0;
+  color: var(--rs-onSurfaceVariant);
+  font-size: 12px;
+  line-height: 18px;
+}
+.rs-settings .rs-config-error:empty {
+  display: none;
+}
+.rs-settings .rs-settings-footer {
+  display: flex;
+  justify-content: center;
+  margin-top: 24px;
+  padding-top: 20px;
+  border-top: 1px solid var(--rs-outline);
+}
+.rs-settings button.rs-reset {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 160px;
+  min-height: 38px;
+  border-radius: 8px;
+  padding: 8px 16px;
+  text-align: center;
+}

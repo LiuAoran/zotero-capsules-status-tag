@@ -1,0 +1,19 @@
+{
+  "manifest_version": 2,
+  "name": "Zotero Capsules Status",
+  "version": "1.0.0",
+  "description": "Independent Material Design 3 reading status capsules for Zotero 10",
+  "author": "Zotero Capsules Status contributors",
+  "applications": {
+    "zotero": {
+      "id": "reading-status-capsules@independent.local",
+      "strict_min_version": "10.0",
+      "strict_max_version": "10.0.*",
+      "update_url": "https://reading-status-capsules.invalid/updates.json"
+    }
+  },
+  "icons": {
+    "48": "assets/icon.svg",
+    "96": "assets/icon.svg"
+  }
+}

@@ -1,0 +1,10 @@
+node_modules/
+build/
+dist/
+__pycache__/
+*.log
+.DS_Store
+.codex/
+.env
+.env.*
+!.env.example

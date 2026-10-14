@@ -1,0 +1,166 @@
+{
+  "version": "10.0.6",
+  "checks": [
+    {
+      "name": "all reorder buttons are accessible triangle icons false",
+      "pass": true
+    },
+    {
+      "name": "add button is an accessible plus icon false",
+      "pass": true
+    },
+    {
+      "name": "wide single choice theme group false",
+      "pass": true
+    },
+    {
+      "name": "theme choice saves false light",
+      "pass": true
+    },
+    {
+      "name": "theme choice saves false dark",
+      "pass": true
+    },
+    {
+      "name": "theme choice saves false system",
+      "pass": true
+    },
+    {
+      "name": "theme keyboard selection false",
+      "pass": true
+    },
+    {
+      "name": "seed and tint save false",
+      "pass": true
+    },
+    {
+      "name": "seed and tint share row false",
+      "pass": true
+    },
+    {
+      "name": "reset is last and square with centered text false",
+      "pass": true
+    },
+    {
+      "name": "down triangle reorders false",
+      "pass": true
+    },
+    {
+      "name": "up triangle reorders false",
+      "pass": true
+    },
+    {
+      "name": "plus button adds state false",
+      "pass": true
+    },
+    {
+      "name": "add controls occupy one row false 900",
+      "pass": true
+    },
+    {
+      "name": "add controls occupy one row false 640",
+      "pass": true
+    },
+    {
+      "name": "all reorder buttons are accessible triangle icons true",
+      "pass": true
+    },
+    {
+      "name": "add button is an accessible plus icon true",
+      "pass": true
+    },
+    {
+      "name": "wide single choice theme group true",
+      "pass": true
+    },
+    {
+      "name": "theme choice saves true light",
+      "pass": true
+    },
+    {
+      "name": "theme choice saves true dark",
+      "pass": true
+    },
+    {
+      "name": "theme choice saves true system",
+      "pass": true
+    },
+    {
+      "name": "theme keyboard selection true",
+      "pass": true
+    },
+    {
+      "name": "seed and tint save true",
+      "pass": true
+    },
+    {
+      "name": "seed and tint share row true",
+      "pass": true
+    },
+    {
+      "name": "reset is last and square with centered text true",
+      "pass": true
+    },
+    {
+      "name": "down triangle reorders true",
+      "pass": true
+    },
+    {
+      "name": "up triangle reorders true",
+      "pass": true
+    },
+    {
+      "name": "plus button adds state true",
+      "pass": true
+    },
+    {
+      "name": "add controls occupy one row true 900",
+      "pass": true
+    },
+    {
+      "name": "add controls occupy one row true 640",
+      "pass": true
+    }
+  ],
+  "screenshots": [
+    "1.0.14-raw-dark-settings.png",
+    "1.0.14-raw-dark-footer.png",
+    "1.0.14-raw-light-settings.png",
+    "1.0.14-raw-light-footer.png",
+    "1.0.14-theme-dark-settings.png",
+    "1.0.14-theme-dark-footer.png",
+    "1.0.14-theme-light-settings.png",
+    "1.0.14-theme-light-footer.png"
+  ],
+  "pluginVersion": "1.0.14",
+  "windowSizes": [
+    {
+      "requestedWidth": 900,
+      "actualWidth": 900,
+      "actualHeight": 772,
+      "mode": "dark",
+      "themeFixture": false
+    },
+    {
+      "requestedWidth": 640,
+      "actualWidth": 800,
+      "actualHeight": 772,
+      "mode": "light",
+      "themeFixture": false
+    },
+    {
+      "requestedWidth": 900,
+      "actualWidth": 900,
+      "actualHeight": 772,
+      "mode": "dark",
+      "themeFixture": true
+    },
+    {
+      "requestedWidth": 640,
+      "actualWidth": 800,
+      "actualHeight": 772,
+      "mode": "light",
+      "themeFixture": true
+    }
+  ]
+}

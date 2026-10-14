@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64">
+  <title>Zotero Capsules Status</title>
+  <rect width="64" height="64" rx="16" fill="#6750A4"/>
+  <defs><clipPath id="capsule"><rect x="8" y="18" width="48" height="28" rx="14"/></clipPath></defs>
+  <g clip-path="url(#capsule)">
+    <path fill="#E9C349" d="M8 18h9.6v28H8z"/>
+    <path fill="#DE6A6A" d="M17.6 18h9.6v28h-9.6z"/>
+    <path fill="#72B98A" d="M27.2 18h9.6v28h-9.6z"/>
+    <path fill="#7EACE0" d="M36.8 18h9.6v28h-9.6z"/>
+    <path fill="#BAC0CC" d="M46.4 18H56v28h-9.6z"/>
+    <path d="M17.6 18v28m9.6-28v28m9.6-28v28m9.6-28v28" stroke="#6750A4" stroke-width="1.5"/>
+  </g>
+  <rect x="8" y="18" width="48" height="28" rx="14" fill="none" stroke="#FFFFFF" stroke-opacity=".9" stroke-width="1.5"/>
+</svg>

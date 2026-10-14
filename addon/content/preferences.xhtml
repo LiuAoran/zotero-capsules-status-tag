@@ -1,0 +1,26 @@
+<section xmlns="http://www.w3.org/1999/xhtml" class="rs-settings">
+<div class="rs-settings-header"><h2><img class="rs-brand-icon" width="32" height="32" alt="" />Zotero Capsules Status</h2></div>
+<div class="rs-theme-row"><span>主题模式</span>
+<div class="rs-theme-options" role="radiogroup" aria-label="主题模式">
+<button type="button" role="radio" data-rs-mode="light" aria-checked="false" tabindex="-1">浅色</button>
+<button type="button" role="radio" data-rs-mode="dark" aria-checked="false" tabindex="-1">深色</button>
+<button type="button" role="radio" data-rs-mode="system" aria-checked="true" tabindex="0">跟随系统</button>
+</div></div>
+<div class="rs-seed-row">
+<label class="rs-seed-label">种子色<input type="color" class="rs-seed" aria-label="种子色" value="#6750a4" /></label>
+<label class="rs-tint-label"><input type="checkbox" class="rs-harmonize" />随种子色偏色</label>
+</div>
+<div class="rs-preview" aria-label="阅读状态配色预览"></div>
+<h3>状态与排序</h3>
+<p class="rs-support">编辑名称与颜色，▲ / ▼ 调整排序。</p>
+<div class="rs-status-editor"></div>
+<p class="rs-support">删除自定义状态不会改动文献标签。</p>
+<form class="rs-add-status rs-status-row">
+<input type="text" class="rs-new-label" maxlength="40" placeholder="新增状态" aria-label="新状态名称" />
+<input type="color" class="rs-new-color" value="#6750a4" aria-label="新状态颜色" title="新状态颜色" />
+<button type="submit" class="rs-icon-button" aria-label="添加状态" title="添加状态"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true"><path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6z" /></svg></button>
+</form>
+<p class="rs-config-error" role="alert"></p>
+<p class="rs-support">设置自动保存。</p>
+<div class="rs-settings-footer"><button type="button" class="rs-reset">恢复默认</button></div>
+</section>

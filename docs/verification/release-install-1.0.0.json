@@ -1,0 +1,34 @@
+{
+  "releaseVersion": "1.0.0",
+  "checks": [
+    {
+      "name": "manual installation reports 1.0.0",
+      "pass": true
+    },
+    {
+      "name": "plugin identity retained",
+      "pass": true
+    },
+    {
+      "name": "preferences retained",
+      "pass": true
+    },
+    {
+      "name": "item tags retained",
+      "pass": true
+    },
+    {
+      "name": "column registered once",
+      "pass": true
+    },
+    {
+      "name": "settings controls load",
+      "pass": true
+    },
+    {
+      "name": "packaged icon loads",
+      "pass": true
+    }
+  ],
+  "previousVersion": "1.0.14"
+}

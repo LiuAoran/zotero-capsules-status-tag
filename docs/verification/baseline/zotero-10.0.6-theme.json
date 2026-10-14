@@ -1,0 +1,845 @@
+{
+  "version": "10.0.6",
+  "tests": [
+    {
+      "name": "restart restores custom state and order",
+      "pass": true
+    },
+    {
+      "name": "restart preserves deleted state recognition",
+      "pass": true
+    },
+    {
+      "name": "theme compatibility fixture is active",
+      "pass": true
+    },
+    {
+      "name": "restart restores persisted To Read",
+      "pass": true
+    },
+    {
+      "name": "default New has no stored status tag",
+      "pass": true
+    },
+    {
+      "name": "column is visible",
+      "pass": true
+    },
+    {
+      "name": "Gecko mouse input opens capsule menu",
+      "pass": true
+    },
+    {
+      "name": "Gecko mouse input selects Reading",
+      "pass": true
+    },
+    {
+      "name": "popup save retains selected item before extra mouseup",
+      "pass": true
+    },
+    {
+      "name": "extra mouseup cannot jump to underlying previous row",
+      "pass": true
+    },
+    {
+      "name": "menu close during mouse press cannot click through to another row",
+      "pass": true
+    },
+    {
+      "name": "menu New",
+      "pass": true
+    },
+    {
+      "name": "save New",
+      "pass": true
+    },
+    {
+      "name": "menu To Read",
+      "pass": true
+    },
+    {
+      "name": "save To Read",
+      "pass": true
+    },
+    {
+      "name": "menu Reading",
+      "pass": true
+    },
+    {
+      "name": "save Reading",
+      "pass": true
+    },
+    {
+      "name": "menu Finished",
+      "pass": true
+    },
+    {
+      "name": "save Finished",
+      "pass": true
+    },
+    {
+      "name": "menu UnRead",
+      "pass": true
+    },
+    {
+      "name": "save UnRead",
+      "pass": true
+    },
+    {
+      "name": "real Zotero undo",
+      "pass": true
+    },
+    {
+      "name": "real Zotero redo",
+      "pass": true
+    },
+    {
+      "name": "Escape cancels menu",
+      "pass": true
+    },
+    {
+      "name": "external conflict updates display",
+      "pass": true
+    },
+    {
+      "name": "manual choice removes conflicts",
+      "pass": true
+    },
+    {
+      "name": "PDF parent status renders, note blank",
+      "pass": true
+    },
+    {
+      "name": "mouse arrow opens unselected parent capsule",
+      "pass": true
+    },
+    {
+      "name": "mouse click selects parent instead of old note",
+      "pass": true
+    },
+    {
+      "name": "control blur does not dismiss menu",
+      "pass": true
+    },
+    {
+      "name": "row repaint retains open menu",
+      "pass": true
+    },
+    {
+      "name": "layout resize retains open menu",
+      "pass": true
+    },
+    {
+      "name": "item pane scroll does not dismiss status menu",
+      "pass": true
+    },
+    {
+      "name": "replacement capsule has expanded state",
+      "pass": true
+    },
+    {
+      "name": "mouse PDF capsule opens",
+      "pass": true
+    },
+    {
+      "name": "mouse PDF saves parent only",
+      "pass": true
+    },
+    {
+      "name": "column follows title",
+      "pass": true
+    },
+    {
+      "name": "keyboard opens and focuses current state",
+      "pass": true
+    },
+    {
+      "name": "ArrowDown advances focus",
+      "pass": true
+    },
+    {
+      "name": "keyboard Enter commits Reading",
+      "pass": true
+    },
+    {
+      "name": "keyboard commit returns focus to capsule",
+      "pass": true
+    },
+    {
+      "name": "Space opens menu",
+      "pass": true
+    },
+    {
+      "name": "outside click cancels",
+      "pass": true
+    },
+    {
+      "name": "capsule selects clicked item without bulk editing",
+      "pass": true
+    },
+    {
+      "name": "programmatic list scroll keeps source menu open",
+      "pass": true
+    },
+    {
+      "name": "user list wheel dismisses menu",
+      "pass": true
+    },
+    {
+      "name": "PDF edit changes parent only",
+      "pass": true
+    },
+    {
+      "name": "injected read-only UI disabled",
+      "pass": true
+    },
+    {
+      "name": "read-only cannot open menu",
+      "pass": true
+    },
+    {
+      "name": "slow save dismisses popup immediately",
+      "pass": true
+    },
+    {
+      "name": "slow save keeps committed label and normal color",
+      "pass": true
+    },
+    {
+      "name": "slow save does not replace unrelated row nodes",
+      "pass": true
+    },
+    {
+      "name": "slow save commits correct parent",
+      "pass": true
+    },
+    {
+      "name": "injected save failure keeps original and reports error",
+      "pass": true
+    },
+    {
+      "name": "cached first-row data cannot bind second-row cell",
+      "pass": true
+    },
+    {
+      "name": "clicking second capsule selects second item",
+      "pass": true
+    },
+    {
+      "name": "second save changes second, not first",
+      "pass": true
+    },
+    {
+      "name": "selection change cannot redirect stale menu save",
+      "pass": true
+    },
+    {
+      "name": "reading status ascending sort",
+      "pass": true
+    },
+    {
+      "name": "virtualized rows match IDs at 0",
+      "pass": true
+    },
+    {
+      "name": "virtualized rows match IDs at 40",
+      "pass": true
+    },
+    {
+      "name": "virtualized rows match IDs at 80",
+      "pass": true
+    },
+    {
+      "name": "virtualized rows match IDs at 5",
+      "pass": true
+    },
+    {
+      "name": "sorted status 0 preserves second item selection",
+      "pass": true
+    },
+    {
+      "name": "extra mouseup after sorted status 0 retains second item",
+      "pass": true
+    },
+    {
+      "name": "sorted status 4 preserves second item selection",
+      "pass": true
+    },
+    {
+      "name": "extra mouseup after sorted status 4 retains second item",
+      "pass": true
+    },
+    {
+      "name": "sorted status 2 preserves second item selection",
+      "pass": true
+    },
+    {
+      "name": "extra mouseup after sorted status 2 retains second item",
+      "pass": true
+    },
+    {
+      "name": "sorted status 3 preserves second item selection",
+      "pass": true
+    },
+    {
+      "name": "extra mouseup after sorted status 3 retains second item",
+      "pass": true
+    },
+    {
+      "name": "sorted status 1 preserves second item selection",
+      "pass": true
+    },
+    {
+      "name": "extra mouseup after sorted status 1 retains second item",
+      "pass": true
+    },
+    {
+      "name": "sorted status 0 preserves second item selection",
+      "pass": true
+    },
+    {
+      "name": "extra mouseup after sorted status 0 retains second item",
+      "pass": true
+    },
+    {
+      "name": "sorted status 3 preserves second item selection",
+      "pass": true
+    },
+    {
+      "name": "extra mouseup after sorted status 3 retains second item",
+      "pass": true
+    },
+    {
+      "name": "sorted status 2 preserves second item selection",
+      "pass": true
+    },
+    {
+      "name": "extra mouseup after sorted status 2 retains second item",
+      "pass": true
+    },
+    {
+      "name": "extra mouseup exercised underlying foreign rows",
+      "pass": true
+    },
+    {
+      "name": "normal row click still selects first item after plugin gesture",
+      "pass": true
+    },
+    {
+      "name": "new user selection during save is not pulled back",
+      "pass": true
+    },
+    {
+      "name": "independent settings page renders",
+      "pass": true
+    },
+    {
+      "name": "five capsule widths are equal",
+      "pass": true
+    },
+    {
+      "name": "display labels match requested names",
+      "pass": true
+    },
+    {
+      "name": "theme preference saves",
+      "pass": true
+    },
+    {
+      "name": "seed preference saves",
+      "pass": true
+    },
+    {
+      "name": "menu inside window at width 48",
+      "pass": true
+    },
+    {
+      "name": "menu inside window at width 112",
+      "pass": true
+    },
+    {
+      "name": "menu inside window at width 160",
+      "pass": true
+    },
+    {
+      "name": "resized window menu fits 820",
+      "pass": true
+    },
+    {
+      "name": "resized window menu fits 1240",
+      "pass": true
+    },
+    {
+      "name": "settings add custom state with isolated stable tag",
+      "pass": true
+    },
+    {
+      "name": "settings rename recolor reorder retain identity",
+      "pass": true
+    },
+    {
+      "name": "configuration immediately updates active status sorting",
+      "pass": true
+    },
+    {
+      "name": "custom menu follows configured order",
+      "pass": true
+    },
+    {
+      "name": "custom status saves and preserves selected source",
+      "pass": true
+    },
+    {
+      "name": "capsule and label are left aligned",
+      "pass": true
+    },
+    {
+      "name": "keyboard reaches sixth menu choice",
+      "pass": true
+    },
+    {
+      "name": "delete button hides custom state without deleting library tags",
+      "pass": true
+    },
+    {
+      "name": "built-in states have no delete control",
+      "pass": true
+    },
+    {
+      "name": "deleted state remains recognizable on existing item",
+      "pass": true
+    },
+    {
+      "name": "deleted state absent from menu",
+      "pass": true
+    },
+    {
+      "name": "manual replacement removes retired tag and preserves other tags",
+      "pass": true
+    },
+    {
+      "name": "undo restores retired item tag and label",
+      "pass": true
+    },
+    {
+      "name": "redo replaces retired tag again",
+      "pass": true
+    },
+    {
+      "name": "disable cleans column menu styles and namespace",
+      "pass": true
+    },
+    {
+      "name": "disable retains manual status tags",
+      "pass": true
+    },
+    {
+      "name": "reenable restores registered column",
+      "pass": true
+    },
+    {
+      "name": "reenable preserves column width",
+      "pass": true
+    }
+  ],
+  "screenshots": [
+    "theme-light.png",
+    "theme-dark.png",
+    "theme-settings.png",
+    "theme-delete-settings.png"
+  ],
+  "menuTrace": [
+    {
+      "message": "Reading Status menu open row: 1843",
+      "time": 1791978192298
+    },
+    {
+      "message": "Reading Status menu close: save started",
+      "time": 1791978192809
+    },
+    {
+      "message": "Reading Status menu open row: 1843",
+      "time": 1791978193332
+    },
+    {
+      "message": "Reading Status menu close: save started",
+      "time": 1791978193840
+    },
+    {
+      "message": "Reading Status menu open row: 1843",
+      "time": 1791978194856
+    },
+    {
+      "message": "Reading Status menu close: save started",
+      "time": 1791978195396
+    },
+    {
+      "message": "Reading Status menu open row: 1843",
+      "time": 1791978195916
+    },
+    {
+      "message": "Reading Status menu close: save started",
+      "time": 1791978196438
+    },
+    {
+      "message": "Reading Status menu open row: 1843",
+      "time": 1791978196957
+    },
+    {
+      "message": "Reading Status menu close: save started",
+      "time": 1791978197463
+    },
+    {
+      "message": "Reading Status menu open row: 1843",
+      "time": 1791978197989
+    },
+    {
+      "message": "Reading Status menu close: save started",
+      "time": 1791978198494
+    },
+    {
+      "message": "Reading Status menu open row: 1843",
+      "time": 1791978199000
+    },
+    {
+      "message": "Reading Status menu close: save started",
+      "time": 1791978199521
+    },
+    {
+      "message": "Reading Status menu open row: 1843",
+      "time": 1791978200053
+    },
+    {
+      "message": "Reading Status menu close: save started",
+      "time": 1791978200560
+    },
+    {
+      "message": "Reading Status menu open row: 1843",
+      "time": 1791978202244
+    },
+    {
+      "message": "Reading Status menu close: explicit",
+      "time": 1791978202774
+    },
+    {
+      "message": "Reading Status menu open row: 1843",
+      "time": 1791978205740
+    },
+    {
+      "message": "Reading Status menu close: explicit",
+      "time": 1791978207759
+    },
+    {
+      "message": "Reading Status menu open row: 1845",
+      "time": 1791978207854
+    },
+    {
+      "message": "Reading Status menu close: save started",
+      "time": 1791978208291
+    },
+    {
+      "message": "Reading Status menu open row: 1843",
+      "time": 1791978209443
+    },
+    {
+      "message": "Reading Status menu close: save started",
+      "time": 1791978209883
+    },
+    {
+      "message": "Reading Status menu open row: 1843",
+      "time": 1791978210391
+    },
+    {
+      "message": "Reading Status menu close: outside pointer",
+      "time": 1791978210894
+    },
+    {
+      "message": "Reading Status menu open row: 1843",
+      "time": 1791978211504
+    },
+    {
+      "message": "Reading Status menu close: save started",
+      "time": 1791978211978
+    },
+    {
+      "message": "Reading Status menu open row: 1845",
+      "time": 1791978213088
+    },
+    {
+      "message": "Reading Status menu close: user list wheel",
+      "time": 1791978213564
+    },
+    {
+      "message": "Reading Status menu open row: 1845",
+      "time": 1791978213601
+    },
+    {
+      "message": "Reading Status menu close: save started",
+      "time": 1791978214111
+    },
+    {
+      "message": "Reading Status menu open row: 1843",
+      "time": 1791978216280
+    },
+    {
+      "message": "Reading Status menu close: save started",
+      "time": 1791978216789
+    },
+    {
+      "message": "Reading Status menu open row: 1843",
+      "time": 1791978218027
+    },
+    {
+      "message": "Reading Status menu close: save started",
+      "time": 1791978218534
+    },
+    {
+      "message": "Reading Status menu open row: 1847",
+      "time": 1791978221560
+    },
+    {
+      "message": "Reading Status menu close: save started",
+      "time": 1791978222005
+    },
+    {
+      "message": "Reading Status menu open row: 1847",
+      "time": 1791978223033
+    },
+    {
+      "message": "Reading Status menu close: outside pointer",
+      "time": 1791978223553
+    },
+    {
+      "message": "Reading Status menu open row: 1847",
+      "time": 1791978229066
+    },
+    {
+      "message": "Reading Status menu close: save started",
+      "time": 1791978229574
+    },
+    {
+      "message": "Reading Status menu open row: 1847",
+      "time": 1791978230670
+    },
+    {
+      "message": "Reading Status menu close: save started",
+      "time": 1791978231178
+    },
+    {
+      "message": "Reading Status menu open row: 1847",
+      "time": 1791978232264
+    },
+    {
+      "message": "Reading Status menu close: save started",
+      "time": 1791978232773
+    },
+    {
+      "message": "Reading Status menu open row: 1847",
+      "time": 1791978233853
+    },
+    {
+      "message": "Reading Status menu close: save started",
+      "time": 1791978234358
+    },
+    {
+      "message": "Reading Status menu open row: 1847",
+      "time": 1791978235425
+    },
+    {
+      "message": "Reading Status menu close: save started",
+      "time": 1791978235933
+    },
+    {
+      "message": "Reading Status menu open row: 1847",
+      "time": 1791978237029
+    },
+    {
+      "message": "Reading Status menu close: save started",
+      "time": 1791978237568
+    },
+    {
+      "message": "Reading Status menu open row: 1847",
+      "time": 1791978238619
+    },
+    {
+      "message": "Reading Status menu close: save started",
+      "time": 1791978239125
+    },
+    {
+      "message": "Reading Status menu open row: 1847",
+      "time": 1791978240185
+    },
+    {
+      "message": "Reading Status menu close: save started",
+      "time": 1791978240693
+    },
+    {
+      "message": "Reading Status menu open row: 1847",
+      "time": 1791978243386
+    },
+    {
+      "message": "Reading Status menu close: save started",
+      "time": 1791978243935
+    },
+    {
+      "message": "Reading Status menu open row: 1843",
+      "time": 1791978245528
+    },
+    {
+      "message": "Reading Status menu close: explicit",
+      "time": 1791978246100
+    },
+    {
+      "message": "Reading Status menu open row: 1843",
+      "time": 1791978246613
+    },
+    {
+      "message": "Reading Status menu close: explicit",
+      "time": 1791978247146
+    },
+    {
+      "message": "Reading Status menu open row: 1843",
+      "time": 1791978248409
+    },
+    {
+      "message": "Reading Status menu close: explicit",
+      "time": 1791978248918
+    },
+    {
+      "message": "Reading Status menu open row: 1843",
+      "time": 1791978249992
+    },
+    {
+      "message": "Reading Status menu close: explicit",
+      "time": 1791978250500
+    },
+    {
+      "message": "Reading Status menu open row: 1843",
+      "time": 1791978251503
+    },
+    {
+      "message": "Reading Status menu close: explicit",
+      "time": 1791978252009
+    },
+    {
+      "message": "Reading Status menu open row: 1843",
+      "time": 1791978253019
+    },
+    {
+      "message": "Reading Status menu close: explicit",
+      "time": 1791978253521
+    },
+    {
+      "message": "Reading Status menu open row: 1843",
+      "time": 1791978254535
+    },
+    {
+      "message": "Reading Status menu close: explicit",
+      "time": 1791978255041
+    },
+    {
+      "message": "Reading Status menu open row: 1843",
+      "time": 1791978259892
+    },
+    {
+      "message": "Reading Status menu close: save started",
+      "time": 1791978260402
+    },
+    {
+      "message": "Reading Status menu open row: 1843",
+      "time": 1791978260936
+    },
+    {
+      "message": "Reading Status menu close: save started",
+      "time": 1791978261445
+    },
+    {
+      "message": "Reading Status menu open row: 1948",
+      "time": 1791978265051
+    },
+    {
+      "message": "Reading Status menu close: save started",
+      "time": 1791978265561
+    },
+    {
+      "message": "Reading Status menu open row: 1843",
+      "time": 1791978267818
+    },
+    {
+      "message": "Reading Status menu close: explicit",
+      "time": 1791978268330
+    }
+  ],
+  "withThemeFixture": true,
+  "themeFixtureVersion": "1.0.1",
+  "pluginVersion": "1.0.14",
+  "mouseTrace": [
+    {
+      "type": "mousedown",
+      "target": "rs-label",
+      "phase": 1
+    },
+    {
+      "type": "mouseup",
+      "target": "rs-label",
+      "phase": 1
+    },
+    {
+      "type": "click",
+      "target": "rs-label",
+      "phase": 1
+    }
+  ],
+  "extraReleaseTargets": [
+    {
+      "selected": 1847,
+      "underlying": 1807,
+      "rank": 0
+    },
+    {
+      "selected": 1847,
+      "underlying": 1841,
+      "rank": 4
+    },
+    {
+      "selected": 1847,
+      "underlying": 1829,
+      "rank": 2
+    },
+    {
+      "selected": 1847,
+      "underlying": 1840,
+      "rank": 3
+    },
+    {
+      "selected": 1847,
+      "underlying": 1833,
+      "rank": 1
+    },
+    {
+      "selected": 1847,
+      "underlying": 1807,
+      "rank": 0
+    },
+    {
+      "selected": 1847,
+      "underlying": 1840,
+      "rank": 3
+    },
+    {
+      "selected": 1847,
+      "underlying": 1829,
+      "rank": 2
+    }
+  ],
+  "windowSizes": [
+    [
+      927,
+      600
+    ],
+    [
+      1240,
+      760
+    ]
+  ]
+}
