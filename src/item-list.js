@@ -11,7 +11,7 @@ import {
   stateIndex,
 } from './model.js';
 import { html, icon } from './dom.js';
-import { targetOf, sourceButton, bindingForButton } from './zotero-adapter.js';
+import { targetOf, sourceButton, bindingForButton, restoreStatusSort } from './zotero-adapter.js';
 import { applyTheme } from './theme.js';
 import { createInteractionController } from './interactions.js';
 export function createItemListController(runtime) {
@@ -535,20 +535,35 @@ export function createItemListController(runtime) {
       tree = win.ZoteroPane?.itemsView;
     }
     if (tree) {
-      await tree.waitForLoad();
-      if (!runtime.alive || !windows.has(win)) return;
-      // Zotero 10.0.6 has no public initial-column-position API. This small adapter
-      // uses verified host column preferences once; it never patches host methods.
-      const prefs = initialColumnPrefs(
-        tree._getColumnPrefs(),
-        tree.getColumns(),
-        runtime.columnKey
-      );
-      if (prefs) {
-        tree._storeColumnPrefs(prefs);
-        Zotero.ItemTreeManager.refreshColumns();
-      }
-      tree.tree?.invalidate();
+      // During startup the pane can precede its collection context. Do not block
+      // host startup while waiting for the host's own UI-ready signal.
+      const initializeView = async () => {
+        if (!runtime.alive || windows.get(win) !== record) return;
+        if (win.ZoteroPane?.itemsView !== tree) return;
+        await tree.waitForLoad();
+        await tree._ensureSortContextReady();
+        if (!runtime.alive || windows.get(win) !== record || win.ZoteroPane?.itemsView !== tree)
+          return;
+        // Zotero 10.0.6 has no public initial-column-position API. This small adapter
+        // uses verified host column preferences once; it never patches host methods.
+        const prefs = initialColumnPrefs(
+          tree._getColumnPrefs(),
+          tree.getColumns(),
+          runtime.columnKey
+        );
+        if (prefs) {
+          tree._storeColumnPrefs(prefs);
+          Zotero.ItemTreeManager.refreshColumns();
+        }
+        await restoreStatusSort(
+          tree,
+          runtime.columnKey,
+          () => runtime.alive && windows.get(win) === record && win.ZoteroPane?.itemsView === tree
+        );
+        tree.tree?.invalidate();
+      };
+      if (tree.id) await initializeView();
+      else Zotero.uiReadyPromise.then(initializeView).catch((error) => Zotero.logError(error));
     }
   }
   function detach(win) {

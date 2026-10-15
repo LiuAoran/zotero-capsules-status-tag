@@ -1,7 +1,7 @@
 {
   "manifest_version": 2,
   "name": "Zotero Capsules Status",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Independent Material Design 3 reading status capsules for Zotero 10",
   "author": "Zotero Capsules Status contributors",
   "applications": {

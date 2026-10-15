@@ -1,0 +1,37 @@
+{
+  "checks": [
+    {
+      "name": "same fixture scope restored",
+      "pass": true
+    },
+    {
+      "name": "cold actual order title",
+      "pass": true
+    },
+    {
+      "name": "cold indicator title",
+      "pass": true
+    }
+  ],
+  "zoteroVersion": "10.0.6",
+  "pluginVersion": "1.0.0",
+  "phase": "title",
+  "actual": [
+    2071,
+    2070,
+    2069,
+    2068,
+    2067,
+    2066
+  ],
+  "expected": [
+    2071,
+    2070,
+    2069,
+    2068,
+    2067,
+    2066
+  ],
+  "sortField": "title",
+  "sortDirection": 1
+}

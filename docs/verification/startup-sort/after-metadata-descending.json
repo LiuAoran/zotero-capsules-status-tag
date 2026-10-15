@@ -1,0 +1,49 @@
+{
+  "checks": [
+    {
+      "name": "same fixture scope restored",
+      "pass": true
+    },
+    {
+      "name": "cold actual order metadata-descending",
+      "pass": true
+    },
+    {
+      "name": "cold indicator metadata-descending",
+      "pass": true
+    }
+  ],
+  "zoteroVersion": "10.0.6",
+  "pluginVersion": "1.0.0",
+  "beforeAttach": {
+    "ids": [
+      2071,
+      2070,
+      2069,
+      2068,
+      2067,
+      2066
+    ],
+    "field": "reading-status-capsules\\@independent\\.local-readingStatus",
+    "direction": -1
+  },
+  "phase": "metadata-descending",
+  "actual": [
+    2070,
+    2069,
+    2068,
+    2067,
+    2071,
+    2066
+  ],
+  "expected": [
+    2070,
+    2069,
+    2068,
+    2067,
+    2071,
+    2066
+  ],
+  "sortField": "reading-status-capsules\\@independent\\.local-readingStatus",
+  "sortDirection": -1
+}

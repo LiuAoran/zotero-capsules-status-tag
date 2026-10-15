@@ -13,7 +13,7 @@ Editable reading-status capsules for your Zotero library.
 ![Zotero](https://img.shields.io/badge/Zotero-10-6750A4?style=flat-square)
 [![Zotero Veil](https://img.shields.io/badge/Friend-Zotero%20Veil-6750A4?style=flat-square)](https://github.com/LiuAoran/zotero-veil)
 
-[**Download XPI**](downloads/zotero-capsules-status-1.0.0.xpi)
+[**Download XPI**](downloads/zotero-capsules-status-1.0.1.xpi)
 
 </div>
 
@@ -37,7 +37,7 @@ Screenshots use an isolated profile and synthetic test items. Theme settings app
 
 ## Install
 
-1. Download the [XPI](downloads/zotero-capsules-status-1.0.0.xpi), using **Download raw file** on GitHub.
+1. Download the [XPI](downloads/zotero-capsules-status-1.0.1.xpi), using **Download raw file** on GitHub.
 2. In Zotero, open **Tools → Plugins → Install Plugin From File**.
 3. Enable the status column and click a capsule to select a status.
 4. Open **Settings → Capsules 状态** to customize appearance, statuses and sort order.

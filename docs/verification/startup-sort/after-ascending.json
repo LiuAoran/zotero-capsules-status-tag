@@ -1,0 +1,37 @@
+{
+  "checks": [
+    {
+      "name": "same fixture scope restored",
+      "pass": true
+    },
+    {
+      "name": "cold actual order ascending",
+      "pass": true
+    },
+    {
+      "name": "cold indicator ascending",
+      "pass": true
+    }
+  ],
+  "zoteroVersion": "10.0.6",
+  "pluginVersion": "1.0.0",
+  "phase": "ascending",
+  "actual": [
+    2066,
+    2071,
+    2067,
+    2068,
+    2069,
+    2070
+  ],
+  "expected": [
+    2066,
+    2071,
+    2067,
+    2068,
+    2069,
+    2070
+  ],
+  "sortField": "reading-status-capsules\\@independent\\.local-readingStatus",
+  "sortDirection": 1
+}

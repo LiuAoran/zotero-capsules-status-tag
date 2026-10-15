@@ -14,7 +14,7 @@
 ![Zotero](https://img.shields.io/badge/Zotero-10-6750A4?style=flat-square)
 [![Zotero Veil](https://img.shields.io/badge/%E5%8F%8B%E9%93%BE-Zotero%20Veil-6750A4?style=flat-square)](https://github.com/LiuAoran/zotero-veil)
 
-[**下载 XPI**](downloads/zotero-capsules-status-1.0.0.xpi)
+[**下载 XPI**](downloads/zotero-capsules-status-1.0.1.xpi)
 
 [预览](#预览) · [安装](#安装) · [功能](#功能) · [数据与兼容](#数据与兼容) · [开发](#开发)
 
@@ -29,12 +29,18 @@
 截图来自独立临时配置和测试文献。明暗与种子色只影响插件自己的胶囊、菜单和设置页面。
 
 ![状态与设置](docs/screenshots/settings-dark.png)
+
+<details>
+<summary>文献列表与浅色设置</summary>
+
 ![文献列表](docs/screenshots/library-dark.png)
 ![浅色设置](docs/screenshots/settings-light.png)
 
+</details>
+
 ## 安装
 
-1. 下载 [XPI](downloads/zotero-capsules-status-1.0.0.xpi)。在 GitHub 文件页面使用 **Download raw file** 保存。
+1. 下载 [XPI](downloads/zotero-capsules-status-1.0.1.xpi)。在 GitHub 文件页面使用 **Download raw file** 保存。
 2. 在 Zotero 的“工具 → 插件”中选择“从文件安装插件”。
 3. 安装后在文献列表启用“状态”列，点击胶囊选择状态。
 4. 打开“设置 → Capsules 状态”，调整主题、种子色、自定义状态和排序。
